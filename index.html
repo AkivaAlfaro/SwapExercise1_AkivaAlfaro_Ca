@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="Firstnum"></p>
+    <p id="Secondnum"></p>
+    <p id="beforeSwap"></p>
+    <p id="afterSwap"></p>
+    <p id="Sum"></p>
+    <script>
+        var num1 = prompt('Enter a first number: ');
+        var num2 = prompt('Enter a second number: ');
+        var a = parseInt(num1);
+        var b = parseInt(num2);
+        var sum = a + b;
+        Firstnum.innerHTML = "Enter a first number: " + num1;
+        Secondnum.innerHTML = "Enter a second number: " + num2;
+        beforeSwap.innerHTML = "The inputs before swapping: " + num1 + " and " + num2 + ".";
+        [num1, num2] = [num2, num1]
+        afterSwap.innerHTML = "After swapping: " + num2 + " and "+ num1 + ".";
+        Sum.innerHTML = "The sum of the two numbers is " + sum;
+
+    </script>
+</body>
+</html>
